@@ -12,13 +12,15 @@
     padding: 10px;
     flex: 1 100%;
 }
+/* body {
+    background: linear-gradient(to right bottom,rgb(83, 44, 134),rgb(139, 99, 170))
+} */
 /*Header*/
 .header {
     display: flex;
     width:100vw;
-    background: whitesmoke;
+    background: rgba(139,99,170);
     justify-content: center;
-    border-bottom: 1px solid black;
 }
 .header ul{
     display:flex;
@@ -32,10 +34,10 @@
 /*Main*/ 
 .main {
     display: flex;
-    background: whitesmoke;
+    background: linear-gradient(to top, rgb(83, 44, 134),rgb(139, 99, 170));
     flex-flow: row nowrap;
 }
-.main-half {
+.half {
     height: 60vh;
     width: 50vw;
     flex: 1;
@@ -47,15 +49,40 @@ img {
 }
 /*Sections*/
 .section-1 {
-    background: gold;
+    height: 40vh;
+    background: linear-gradient(to bottom,rgb(83, 44, 134),rgb(139, 99, 170));
 }
 .section-2 {
-    background: hotpink;
+    background: linear-gradient(to bottom,rgb(139, 99, 170),rgb(83, 44, 134));
 }
 /*Footer*/
 .footer {
     background: lightgreen;
 }
+
+
+/*Slideshow*/
+.slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+}
+
+.mySlides { /*ensures that the slides default to being non-visible */
+    display: none;
+}
+
+.fade { /* names the animation and sets the duration it takes to complete */
+    animation-name: fade;
+    animation-duration: .1s;
+}
+
+@keyframes fade { /*details what happens during the animation called "fade" */
+    from{opacity: 1}
+    to{opacity: 1}
+}
+
+
 /*Media Queries*/
 
 /* @media all and (min-width: 600px) {
