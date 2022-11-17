@@ -132,8 +132,8 @@ h3 {
     color: rgba(139, 99, 170, 0.8)
 }
 #question-mark {
-    max-height: 120px;
-    max-width: 90px;
+    max-height: 100px;
+    max-width: 75px;
 }
 #optionsIMG {
     border-radius: 5px;
@@ -148,4 +148,20 @@ h3 {
     width:50%;
     height:50%;
     margin: auto;
+}
+
+/* Media Queries/Related classes */
+
+/* 320px — 480px: Mobile devices
+481px — 768px: iPads, Tablets
+769px — 1024px: Small screens, laptops
+1025px — 1200px: Desktops, large screens
+1201px and more —  Extra large screens, TV */
+.firstToGo {
+    display: none;
+}
+@media screen and (min-width: 768px) {
+    .firstToGo {
+        display: block;
+    }
 }
